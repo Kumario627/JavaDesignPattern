@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="366c6b49-9dcc-494d-9801-f72e7122aaf5" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/BookShelf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/BookShelfIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Iterator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Iterator/BookShelfIteratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Iterator/BookShelfTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Iterator/BookShelfTestFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Iterator/BookTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaDesignPattern.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaDesignPattern.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,23 +37,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;モジュール&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "モジュール",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="JUnit.BookShelfIteratorTest.hasNextが最終行まではtrue">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Iterator.Main" />
       <module name="JavaDesignPattern" />
@@ -68,8 +71,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BookShelfIteratorTest.hasNextが最終行まではtrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaDesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Iterator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Iterator" />
+      <option name="MAIN_CLASS_NAME" value="Iterator.BookShelfIteratorTest" />
+      <option name="METHOD_NAME" value="hasNextが最終行まではtrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookShelfTest.確保したがappendしていない領域はnullが返却される" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaDesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Iterator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Iterator" />
+      <option name="MAIN_CLASS_NAME" value="Iterator.BookShelfTest" />
+      <option name="METHOD_NAME" value="確保したがappendしていない領域はnullが返却される" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookTest.インスタンス作成時に本の名称が正しく設定されていること" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaDesignPattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Iterator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Iterator" />
+      <option name="MAIN_CLASS_NAME" value="Iterator.BookTest" />
+      <option name="METHOD_NAME" value="インスタンス作成時に本の名称が正しく設定されていること" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BookShelfIteratorTest.hasNextが最終行まではtrue" />
+        <item itemvalue="JUnit.BookShelfTest.確保したがappendしていない領域はnullが返却される" />
+        <item itemvalue="JUnit.BookTest.インスタンス作成時に本の名称が正しく設定されていること" />
         <item itemvalue="アプリケーション.Main" />
       </list>
     </recent_temporary>
@@ -83,7 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656341274340</updated>
       <workItem from="1656341275590" duration="3482000" />
-      <workItem from="1656425151232" duration="988000" />
+      <workItem from="1656425151232" duration="6272000" />
     </task>
     <servers />
   </component>
