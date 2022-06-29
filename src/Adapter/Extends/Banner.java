@@ -1,5 +1,8 @@
 package Adapter.Extends;
 
+/**
+ * AdapterのAdaptee（適合される側）
+ */
 public class Banner {
     private String string;
 
