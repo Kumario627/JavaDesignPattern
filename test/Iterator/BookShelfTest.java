@@ -7,6 +7,7 @@ public class BookShelfTest {
 
     final String firstBookName = "一冊目";
     final String secondBookName = "二冊目";
+    final String thirdBookName = "三冊目";
 
     @Test
     void bookShelfが正常に利用できる() {
@@ -21,17 +22,12 @@ public class BookShelfTest {
         bookShelf.appendBook(new Book(secondBookName));
         assertEquals(2, bookShelf.getLength());
 
-        for(int i =0; i < bookShelf.getLength(); i++) {
-            assertEquals(firstBookName, bookShelf.getBookAt(i).getName());
-        }
+        assertEquals(firstBookName, bookShelf.getBookAt(0).getName());
+        assertEquals(secondBookName, bookShelf.getBookAt(1).getName());
+
+        // 最初に確保した領域以上にbookshelfへappendできる
+        bookShelf.appendBook(new Book(thirdBookName));
+        assertEquals(thirdBookName, bookShelf.getBookAt(2).getName());
     }
 
-    @Test
-    void 確保したがappendしていない領域はnullが返却される() {
-        BookShelf bookShelf = new BookShelf(2);
-
-        bookShelf.appendBook(new Book(firstBookName));
-
-        assertEquals(null, bookShelf.getBookAt(1));
-    }
 }

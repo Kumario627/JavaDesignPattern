@@ -1,7 +1,9 @@
 package Iterator;
 
 import java.lang.Iterable;
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * ConcreteAggregate(Iterableの実装クラス)
@@ -9,19 +11,19 @@ import java.util.Iterator;
  */
 public class BookShelf implements Iterable<Book> {
 
-    private Book[] books;
+    private List<Book> books;
     private int last = 0;
 
     public BookShelf(int maxSize) {
-        this.books = new Book[maxSize];
+        this.books = new ArrayList<>(maxSize);
     }
 
     public Book getBookAt(int index) {
-        return books[index];
+        return books.get(index);
     }
 
     public void appendBook(Book book) {
-        this.books[last] = book;
+        books.add(book);
         last++;
     }
 
