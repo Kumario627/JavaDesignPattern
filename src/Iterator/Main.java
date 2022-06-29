@@ -10,6 +10,10 @@ public class Main {
         bookShelf.appendBook(new Book("Cinderella"));
         bookShelf.appendBook(new Book("Daddy-Long-Legs"));
 
+        // 下記繰り返しはどちらもIteratorの実装を呼び出しているだけ
+        // 従ってBookShelfの実装がどうなっていようと影響がない
+        // 繰り返しに必要なのはIteratorのnext及びhasNextの実装のみ
+
         // 明示的にIteratorを使う方法
         Iterator<Book> it = bookShelf.iterator();
         while (it.hasNext()) {

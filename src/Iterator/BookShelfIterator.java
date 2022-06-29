@@ -3,6 +3,10 @@ package Iterator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
+/**
+ * ConcreteIteratorクラス(Iteratorの実装クラス)
+ * スキャンに必要な情報を持っている必要がある
+ */
 public class BookShelfIterator implements Iterator<Book> {
     private BookShelf bookShelf;
     private int index;
