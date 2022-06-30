@@ -1,6 +1,6 @@
-package Adapter.Transfer;
+package adapter.transfer;
 
-import Adapter.Extends.Banner;
+import adapter.extend.Banner;
 
 /**
  * Adapter役(AdapteeをTargetに変換)

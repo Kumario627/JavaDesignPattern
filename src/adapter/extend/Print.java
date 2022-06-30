@@ -1,4 +1,4 @@
-package Adapter.Extends;
+package adapter.extend;
 
 /**
  * AdapterのTarget（今必要となっているメソッドを定める）

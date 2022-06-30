@@ -1,4 +1,4 @@
-package Adapter.Extends;
+package adapter.extend;
 
 /**
  * Adapter役(AdapteeをTargetに変換)

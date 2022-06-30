@@ -1,4 +1,4 @@
-package Adapter.Extends;
+package adapter.extend;
 
 /**
  * AdapterのAdaptee（適合される側）

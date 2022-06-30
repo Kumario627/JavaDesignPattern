@@ -1,4 +1,4 @@
-package Adapter.Transfer;
+package adapter.transfer;
 
 /**
  * AdapterのTarget（今必要となっているメソッドを定める）

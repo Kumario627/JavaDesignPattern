@@ -1,4 +1,4 @@
-package Iterator;
+package iterator;
 
 public class BookShelfTestFactory {
 

@@ -1,4 +1,4 @@
-package Iterator;
+package iterator;
 
 import org.junit.jupiter.api.Test;
 
