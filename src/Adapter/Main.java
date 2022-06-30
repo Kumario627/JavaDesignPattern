@@ -1,4 +1,7 @@
-package Adapter.Extends;
+package Adapter;
+
+import Adapter.Extends.Print;
+import Adapter.Extends.PrintBanner;
 
 public class Main {
     public static void main(String[] args) {
