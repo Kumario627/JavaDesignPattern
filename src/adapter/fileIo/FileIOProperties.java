@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class FileIOProperties implements FileIo {
-    Properties settings = new Properties();
+    private final Properties settings = new Properties();
 
     @Override
     public void readFromFile(String fileName) throws IOException {

@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class BookShelf implements Iterable<Book> {
 
-    private List<Book> books;
+    private final List<Book> books;
     private int last = 0;
 
     public BookShelf(int maxSize) {

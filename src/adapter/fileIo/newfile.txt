@@ -1,5 +1,5 @@
 #witten by FileProperties
-#Thu Jun 30 23:51:19 JST 2022
+#Fri Jul 01 08:28:32 JST 2022
 depth=32
 height=512
 width=1024

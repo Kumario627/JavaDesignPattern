@@ -8,7 +8,7 @@ import java.util.NoSuchElementException;
  * スキャンに必要な情報を持っている必要がある
  */
 public class BookShelfIterator implements Iterator<Book> {
-    private BookShelf bookShelf;
+    private final BookShelf bookShelf;
     private int index;
 
     public BookShelfIterator(BookShelf bookShelf) {

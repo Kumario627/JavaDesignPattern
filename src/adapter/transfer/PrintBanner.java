@@ -7,7 +7,7 @@ import adapter.extend.Banner;
  */
 public class PrintBanner extends Print {
 
-    private Banner banner;
+    private final Banner banner;
 
     public PrintBanner(String string) {
         this.banner = new Banner(string);
