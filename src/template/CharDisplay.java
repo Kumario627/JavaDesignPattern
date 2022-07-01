@@ -1,6 +1,6 @@
 package template;
 
-public class CharDisplay extends AbstractDisplay {
+public class CharDisplay implements AbstractDisplay {
 
     private char ch;
 

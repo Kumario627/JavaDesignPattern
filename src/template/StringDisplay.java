@@ -1,6 +1,6 @@
 package template;
 
-public class StringDisplay extends AbstractDisplay {
+public class StringDisplay implements AbstractDisplay {
     private final String string;
 
     public StringDisplay(String string) {
