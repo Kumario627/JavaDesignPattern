@@ -5,10 +5,12 @@ import factory.framework.Product;
 public class IdCard extends Product {
 
     private final String owner;
+    private final int cardNo;
 
-    public IdCard(String owner) {
-        System.out.println(owner + "のカードを作ります");
+    public IdCard(String owner, int cardNo) {
+        System.out.println(owner + "のカードを"+ cardNo + "で作ります");
         this.owner = owner;
+        this.cardNo = cardNo;
     }
 
     @Override
@@ -17,10 +19,14 @@ public class IdCard extends Product {
     }
 
     public String toString() {
-        return "[IDCard:" + owner + "]";
+        return "[IDCard:" + owner +  "(" + cardNo + ")" + "]";
     }
 
     public String getOwner() {
         return this.owner;
+    }
+
+    public int getCardNo() {
+        return this.cardNo;
     }
 }
