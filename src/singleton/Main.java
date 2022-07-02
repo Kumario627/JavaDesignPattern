@@ -15,5 +15,8 @@ public class Main {
 
         System.out.println("end.");
 
+        Triple alpha = Triple.getInstance("ALPHA");
+        Triple alpha2 = Triple.getInstance("ALPHA");
+
     }
 }
