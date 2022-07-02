@@ -1,6 +1,6 @@
 package prototype;
 
-public class UnderlinePen implements Product {
+public class UnderlinePen extends Product {
 
     private final char underCh;
 
@@ -19,18 +19,5 @@ public class UnderlinePen implements Product {
         }
 
         System.out.println();
-    }
-
-    @Override
-    public Product createCopy() {
-        Product product = null;
-
-        try {
-            product = (Product)clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-
-        return product;
     }
 }

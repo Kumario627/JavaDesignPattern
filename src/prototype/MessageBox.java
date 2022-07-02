@@ -1,6 +1,6 @@
 package prototype;
 
-public class MessageBox implements Product {
+public class MessageBox extends Product {
 
     private final char decorator;
 
@@ -13,19 +13,6 @@ public class MessageBox implements Product {
         outDecoratorLine(s);
         System.out.println(decorator + s + decorator);
         outDecoratorLine(s);
-    }
-
-    @Override
-    public Product createCopy() {
-
-        Product p = null;
-        try {
-            p = (Product)clone();
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-
-        return p;
     }
 
     private void outDecoratorLine(String s) {
