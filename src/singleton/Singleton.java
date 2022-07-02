@@ -7,7 +7,7 @@ public class Singleton {
         System.out.println("インスタンスを生成");
     }
 
-    public static Singleton getInstance() {
+    public static synchronized Singleton getInstance() {
         return singleton;
     }
 }
