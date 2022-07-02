@@ -2,7 +2,7 @@ package builder;
 
 import java.util.Arrays;
 
-public class TextBuilder extends Builder {
+public class TextBuilder implements Builder {
 
     private StringBuilder stringBuilder = new StringBuilder();
 

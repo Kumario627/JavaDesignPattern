@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.Arrays;
 
-public class HtmlBuilder extends Builder {
+public class HtmlBuilder implements Builder {
     private String fileName;
     private StringBuilder stringBuilder = new StringBuilder();
 
