@@ -1,11 +1,15 @@
 package prototype;
 
-public class UnderlinePen extends Product {
+public class UnderlinePen implements Product {
 
     private final char underCh;
 
     public UnderlinePen(char underCh) {
         this.underCh = underCh;
+    }
+
+    public UnderlinePen(UnderlinePen prototype) {
+        this.underCh = prototype.underCh;
     }
 
     @Override
@@ -19,5 +23,10 @@ public class UnderlinePen extends Product {
         }
 
         System.out.println();
+    }
+
+    @Override
+    public Product createCopy() {
+        return new UnderlinePen(this);
     }
 }

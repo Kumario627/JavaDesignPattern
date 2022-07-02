@@ -1,6 +1,6 @@
 package prototype;
 
-public class MessageBox extends Product {
+public class MessageBox implements Product {
 
     private final char decorator;
 
@@ -8,11 +8,20 @@ public class MessageBox extends Product {
         this.decorator = decorator;
     }
 
+    public MessageBox(MessageBox prototype) {
+        this.decorator = prototype.decorator;
+    }
+
     @Override
     public void use(String s) {
         outDecoratorLine(s);
         System.out.println(decorator + s + decorator);
         outDecoratorLine(s);
+    }
+
+    @Override
+    public Product createCopy() {
+        return new MessageBox(this);
     }
 
     private void outDecoratorLine(String s) {
@@ -25,4 +34,6 @@ public class MessageBox extends Product {
 
         System.out.println();
     }
+
+
 }
