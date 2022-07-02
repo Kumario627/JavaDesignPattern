@@ -34,6 +34,4 @@ public class MessageBox implements Product {
 
         System.out.println();
     }
-
-
 }
